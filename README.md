@@ -4,3 +4,4 @@ This is the menu project for CSE 360 Spring 22. Add ur name to this doc, scroll 
 Chris Kontsis
 Kuan-Cheng Lee
 David Wang
+Kevin Harioka
