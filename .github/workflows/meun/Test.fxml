@@ -1,93 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--
-  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
-  All rights reserved. Use is subject to license terms.
-
-  This file is available and licensed under the following license:
-
-  Redistribution and use in source and binary forms, with or without
-  modification, are permitted provided that the following conditions
-  are met:
-
-  - Redistributions of source code must retain the above copyright
-    notice, this list of conditions and the following disclaimer.
-  - Redistributions in binary form must reproduce the above copyright
-    notice, this list of conditions and the following disclaimer in
-    the documentation and/or other materials provided with the distribution.
-  - Neither the name of Oracle Corporation nor the names of its
-    contributors may be used to endorse or promote products derived
-    from this software without specific prior written permission.
-
-  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
-<VBox fx:id="abc" prefHeight="811.0" prefWidth="981.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
-  <children>
-    <AnchorPane fx:id="Anchor" maxHeight="-1.0" maxWidth="-1.0" prefHeight="769.0" prefWidth="745.0" VBox.vgrow="ALWAYS">
-      <children>
-            <Label fx:id="Menu" alignment="CENTER" contentDisplay="TOP" layoutX="396.0" layoutY="21.0" prefHeight="54.0" prefWidth="90.0" text="MENU" textAlignment="JUSTIFY">
-               <font>
-                  <Font size="25.0" />
-               </font>
-            </Label>
-            <Button fx:id="Filter" layoutX="676.0" layoutY="57.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="90.0" text="Filter" />
-            <Hyperlink fx:id="Appetizers" layoutX="22.0" layoutY="124.0" text="Appetizers" />
-            <Hyperlink fx:id="Main" layoutX="22.0" layoutY="146.0" text="Main" />
-            <Hyperlink fx:id="Side" layoutX="22.0" layoutY="168.0" text="Side Dishes" />
-            <Hyperlink fx:id="About" layoutX="22.0" layoutY="290.0" text="About Us" />
-            <Hyperlink fx:id="Log" layoutX="22.0" layoutY="268.0" text="Log In" />
-            <Label fx:id="Cesar" layoutX="113.0" layoutY="104.0" prefHeight="15.0" prefWidth="73.0" text="Cesar Salad" />
-            <Label fx:id="Price1" layoutX="227.0" layoutY="104.0" text="Price: " />
-            <Label fx:id="Ingredient1" layoutX="107.0" layoutY="225.0" prefHeight="153.0" prefWidth="194.0" text="Ingredients: Lettuce, Parmesan..." />
-            <Label fx:id="Alaska" layoutX="374.0" layoutY="104.0" prefHeight="18.0" prefWidth="130.0" text="Alaskan Salmon" />
-            <Label fx:id="Price2" layoutX="492.0" layoutY="104.0" text="Price: " />
-            <Label fx:id="Ingredient2" layoutX="375.0" layoutY="225.0" prefHeight="154.0" prefWidth="163.0" text="Ingredients: Wild salmon, ..." />
-            <Label fx:id="Filet" layoutX="651.0" layoutY="104.0" prefHeight="15.0" prefWidth="73.0" text="Filet Mignon" />
-            <Label fx:id="Price3" layoutX="773.0" layoutY="104.0" text="Price: " />
-            <Label fx:id="Ingredient3" layoutX="658.0" layoutY="224.0" prefHeight="154.0" prefWidth="163.0" text="Ingredients: Filet Mignon, ..." />
-            <Label fx:id="Mashed" layoutX="115.0" layoutY="434.0" prefHeight="18.0" prefWidth="118.0" text="Mashed Potatoes" />
-            <Label fx:id="Price4" layoutX="244.0" layoutY="434.0" text="Price: " />
-            <Label fx:id="Ingredient4" layoutX="112.0" layoutY="571.0" prefHeight="154.0" prefWidth="184.0" text="Ingredients: Russet Potatoes, .." />
-            <Label fx:id="Lamb" layoutX="344.0" layoutY="431.0" prefHeight="18.0" prefWidth="90.0" text="Lamb Chops" />
-            <Label fx:id="Price5" layoutX="463.0" layoutY="431.0" text="Price: " />
-            <Label fx:id="Ingredient5" layoutX="351.0" layoutY="571.0" prefHeight="154.0" prefWidth="158.0" text="Ingredients: Prime Lamb,..." />
-            <Button fx:id="Buttom" layoutX="664.0" layoutY="680.0" mnemonicParsing="false" onMouseClicked="#ClickedMouse" text="Button" />
-            <TextField fx:id="Search" layoutX="185.0" layoutY="69.0" prefHeight="26.0" prefWidth="493.0" />
-            <Label fx:id="Cata1" layoutX="113.0" layoutY="127.0" text="Label" />
-            <Label fx:id="Cata2" layoutX="378.0" layoutY="127.0" text="Label" />
-            <Label fx:id="Cata4" layoutX="113.0" layoutY="452.0" text="Label" />
-            <Label fx:id="Cata3" layoutX="655.0" layoutY="127.0" text="Label" />
-            <Label fx:id="Cata5" layoutX="344.0" layoutY="452.0" text="Label" />
-            <Label fx:id="pic1" layoutX="172.0" layoutY="173.0" text="Label" />
-            <Label fx:id="pic2" layoutX="430.0" layoutY="173.0" text="Label" />
-            <Label fx:id="pic3" layoutX="715.0" layoutY="171.0" text="Label" />
-            <Label fx:id="pic5" layoutX="414.0" layoutY="512.0" text="Label" />
-            <Label fx:id="pic4" layoutX="189.0" layoutY="512.0" text="Label" />
-            <Label fx:id="Cata51" layoutX="465.0" layoutY="452.0" text="Label" />
-            <Label fx:id="Cata511" layoutX="245.0" layoutY="452.0" text="Label" />
-            <Label fx:id="Cata512" layoutX="229.0" layoutY="127.0" text="Label" />
-            <Label fx:id="Cata513" layoutX="494.0" layoutY="127.0" text="Label" />
-            <Label fx:id="Cata514" layoutX="785.0" layoutY="127.0" text="Label" />
-      </children>
-    </AnchorPane>
-  </children>
-</VBox>
+<AnchorPane fx:id="start" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="826.0" prefWidth="993.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane fx:id="dividerCosm" dividerPositions="0.11200807265388496" layoutX="14.0" layoutY="48.0" prefHeight="778.0" prefWidth="993.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="54.0">
+        <items>
+          <AnchorPane fx:id="firstSideDiv" minHeight="0.0" minWidth="0.0" prefHeight="770.0" prefWidth="102.0" style="-fx-background-color: #7CB9E8#7CB9E8; -fx-border-color: transparent;">
+               <children>
+                  <Button fx:id="editMenuButton" layoutX="18.0" layoutY="716.0" mnemonicParsing="false" text="Edit Menu" />
+                  <Button fx:id="logInButton" layoutX="28.0" layoutY="682.0" mnemonicParsing="false" text="Log In" />
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="secondDiv" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <GridPane fx:id="mainScreen" hgap="10.0" layoutY="2.0" prefHeight="770.0" prefWidth="877.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="180.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="88.0" minHeight="10.0" prefHeight="81.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="107.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="175.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="shoppingCartButton" mnemonicParsing="false" text="Shopping Cart" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <VBox fx:id="topFormat" prefHeight="54.0" prefWidth="993.0" AnchorPane.bottomAnchor="772.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="menuLabel" text="Menu" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
