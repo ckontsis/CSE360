@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RestaurantGUI.EnterInformation">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="Label1" prefHeight="91.0" prefWidth="200.0" text="Enter Information" translateX="200.0" />
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <PasswordField fx:id="Address" onAction="#setAddress" prefHeight="26.0" prefWidth="200.0" translateX="20.0" translateY="100.0" />
+            <Label fx:id="Label11" prefHeight="31.0" prefWidth="143.0" text="Address:" translateX="-100.0" translateY="50.0" />
+         </children>
+      </HBox>
+   </left>
+   <right>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button fx:id="Continue" mnemonicParsing="false" onAction="#waitingScreen" text="Proceed" translateY="100.0" />
+              </buttons>
+            </ButtonBar>
+         </children>
+      </HBox>
+   </right>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="Label12" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="200.0" text="Select Payment Type:" translateX="50.0" />
+            <RadioButton fx:id="radioButton1" minWidth="-Infinity" mnemonicParsing="false" onAction="#setPaymentType" prefHeight="18.0" prefWidth="50.0" text="Card" translateX="-150.0" translateY="40.0" />
+            <RadioButton fx:id="radioButton2" minWidth="-Infinity" mnemonicParsing="false" onAction="#setPaymentType" prefHeight="18.0" prefWidth="50.0" text="Cash" translateX="-200.0" translateY="80.0" />
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
