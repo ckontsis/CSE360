@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
@@ -32,10 +33,10 @@
                     <rowConstraints>
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="180.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="88.0" minHeight="10.0" prefHeight="81.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="107.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="111.0000244140625" minHeight="10.0" prefHeight="111.0000244140625" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="34.20002441406251" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="74.0000061035156" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="107.0" minHeight="10.0" prefHeight="42.79999389648435" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="175.0" vgrow="SOMETIMES" />
                       <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -43,6 +44,9 @@
                      <children>
                         <Button fx:id="shoppingCartButton" mnemonicParsing="false" text="Shopping Cart" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
                      </children>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
                   </GridPane>
                </children>
             </AnchorPane>
