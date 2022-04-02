@@ -27,30 +27,20 @@ public class Main extends Application {
 		
 		//Parent root1 = FXMLLoader.load(getClass().getResource("popup.fxml"));
 		
-		
 		Parent root = FXMLLoader.load(getClass().getResource("Test.fxml"));
 		
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("GUI.fxml"));
-    			
-    		editController controller = new editController(menu);
-    			
-    		loader.setController(controller);
-    			
-    		AnchorPane anchor = loader.load();
-    		Scene scene = new Scene(anchor, 1055, 755);
-    			    			
-    		primaryStage.setTitle("Edit Menu");
-
-    		primaryStage.setScene(scene);
-    		primaryStage.show();
-    			
-    		this.menu = controller.getNewMenu();
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("Test.fxml"));
 		
+		mainController controller = new mainController();
 		
+		loader.setController(controller);
+		
+		VBox start = loader.load();
+    			    					
 		primaryStage.setTitle("abc");
 		
 		//primaryStage.setScene(new Scene(root1, 1055, 755));
-		primaryStage.setScene(new Scene(root, 1055, 755));
+		primaryStage.setScene(new Scene(start, 1055, 755));
 		primaryStage.show();
 		
 	}
