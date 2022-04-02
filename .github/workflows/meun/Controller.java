@@ -19,7 +19,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-
+//public class mainController implements Initializable{
 public class Controller implements Initializable {
 	
 	
