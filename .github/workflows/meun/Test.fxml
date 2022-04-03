@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -9,6 +10,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="start" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="826.0" prefWidth="993.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -16,8 +18,15 @@
         <items>
           <AnchorPane fx:id="firstSideDiv" minHeight="0.0" minWidth="0.0" prefHeight="770.0" prefWidth="102.0" style="-fx-background-color: #7CB9E8#7CB9E8; -fx-border-color: transparent;">
                <children>
-                  <Button fx:id="editMenuButton" layoutX="18.0" layoutY="716.0" mnemonicParsing="false" text="Edit Menu" />
-                  <Button fx:id="logInButton" layoutX="28.0" layoutY="682.0" mnemonicParsing="false" text="Log In" />
+                  <Button fx:id="editMenuButton" layoutX="5.0" layoutY="632.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="98.0" text="Edit Menu" />
+                  <Button fx:id="logInButton" layoutX="5.0" layoutY="591.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="98.0" text="Log In" />
+                  <Button fx:id="shoppingCartButton" layoutX="5.0" layoutY="673.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="98.0" text="Shopping Cart" />
+                  <Label fx:id="accLabel" alignment="CENTER" layoutX="10.0" layoutY="14.0" prefHeight="17.0" prefWidth="89.0" text="Welcome!">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <ComboBox fx:id="Combo1" layoutY="48.0" prefHeight="23.0" prefWidth="108.0" promptText="Tpye" />
+                  <Label fx:id="label1" layoutX="39.0" layoutY="82.0" text="Label" />
                </children>
             </AnchorPane>
           <AnchorPane fx:id="secondDiv" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
@@ -33,17 +42,14 @@
                     <rowConstraints>
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="180.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="111.0000244140625" minHeight="10.0" prefHeight="111.0000244140625" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="34.20002441406251" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="74.0000061035156" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="107.0" minHeight="10.0" prefHeight="42.79999389648435" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="175.0" vgrow="SOMETIMES" />
-                      <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="170.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
-                     <children>
-                        <Button fx:id="shoppingCartButton" mnemonicParsing="false" text="Shopping Cart" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
-                     </children>
                      <padding>
                         <Insets left="5.0" />
                      </padding>
@@ -54,7 +60,10 @@
       </SplitPane>
       <VBox fx:id="topFormat" prefHeight="54.0" prefWidth="993.0" AnchorPane.bottomAnchor="772.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label fx:id="menuLabel" text="Menu" />
+            <Label fx:id="menuLabel" alignment="CENTER" prefHeight="58.0" prefWidth="993.0" style="-fx-background-color: #7CB9E8#7CB9E8 #7CB9E8#7CB9E8;" text="Menu">
+               <font>
+                  <Font name="Chalkduster" size="39.0" />
+               </font></Label>
          </children>
       </VBox>
    </children>
